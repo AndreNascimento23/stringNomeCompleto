@@ -1,21 +1,15 @@
-﻿Console.Clear();
+
+Console.Clear();
 
 Console.Write($"Digite seu nome....  ");
 
-string nome;
+string nome, sobrenome;
 nome = Console.ReadLine()!;
 
-
 Console.Write($"Digite seu sobrenome....  ");
-
-string sobrenome;
 sobrenome = Console.ReadLine()!;
 
-string nomeCompleto = (nome) + (sobrenome);
-
 Console.WriteLine();
-Console.Write("Nome Completo: ");
-Console.WriteLine($"{nome} { sobrenome}");
-
-Console.Write("Nome de catálogo: ");
-Console.WriteLine($"{sobrenome}, {nome}");
+Console.WriteLine($"Nome Completo: {nome} {sobrenome}");
+Console.WriteLine();
+Console.WriteLine($"Nome de catálogo: {sobrenome.ToUpper()}, {nome.ToLower()}");
